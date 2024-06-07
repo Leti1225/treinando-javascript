@@ -1,6 +1,5 @@
 //variaveis de tudo que vai ser usado no codigo, ligadas as tags html
-const turnOn = document.getElementById('turnOn');
-const turnOff = document.getElementById('turnOff');
+const turnOnOff = document.getElementById('turnOnOff');
 const lamp = document.getElementById('lamp');
 
 // função para verificar quando a lampada está quebrada
@@ -25,6 +24,16 @@ function lampOff (){
 
 function lampBreak (){
     lamp.src = './img/quebrada.jpg'; //a imagem da lampada será mudada para quebrada
+}
+
+function lampOnOff(){
+    if(turnOnOff.textContent == 'Ligar'){
+        lampOn();
+        turnOnOff.textContent = 'Desligar'
+    }else{
+        lampOff();
+        turnOnOff.textContent = 'Ligar';
+    }
 }
 
 /*
