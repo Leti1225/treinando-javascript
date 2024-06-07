@@ -2,18 +2,6 @@
 const turnOn = document.getElementById('turnOn');
 const turnOff = document.getElementById('turnOff');
 const lamp = document.getElementById('lamp');
-const botao = document.getElementById('botao');
-
-botao.addEventListener('click', trocarNome())
-
-function trocarNome(){
-    if(lampOff()){
-        botao.textContent = 'Ligar'
-    }else if(lampOn()){
-        botao.textContent = 'Desligar'
-    }
-
-}
 
 // função para verificar quando a lampada está quebrada
 function isLampBroken(){
